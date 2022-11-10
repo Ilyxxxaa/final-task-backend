@@ -6,7 +6,7 @@ import * as serverService from './services/server.service';
 (async () => {
   try {
     await mongoose.connect(
-      'mongodb+srv://${Ilyxxxa}:${8399273}@${cluster0.ns19xgl}.mongodb.net/ProjectManagementApp',
+      'mongodb+srv://Ilyxxxa:<password>@cluster0.ns19xgl.mongodb.net/?retryWrites=true&w=majority',
     );
     serverService.server.listen(process.env.PORT || PORT, function () {
       console.log('Сервер ожидает подключения...');
